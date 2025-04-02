@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Page</title>
+    <link rel="stylesheet" href="design.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="description">
+        <h1>Welcome to the Kawasaki Ninja Motor Show</h1>
+        <p>Ride Or Die until we come back to life</p>
+    </div>
+    <div class="slider">
+        <div class="slider-container">
+            <div class="slider-item">
+                <img src="img1.jpg" alt="Kawasaki Ninja 400">
+                <div class="caption">Kawasaki Ninja 400</div>
+            </div>
+            <div class="slider-item">
+                <img src="img2.jpg" alt="Kawasaki Ninja ZX10r">
+                <div class="caption">Kawasaki Ninja ZX10r</div>
+            </div>
+            <div class="slider-item">
+                <img src="img3.jpg" alt="Kawasaki Ninja H2r">
+                <div class="caption">Kawasaki Ninja H2r</div>
+            </div>
+        </div>+
+        <div class="slider-nav">
+            <button id="nav-button-prev" class="slider-nav-button" onclick="plusSlides(-1)">&#10094;</button>
+            <button id="nav-button-next" class="slider-nav-button" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <script src="slider.js"></script>
+</body>
+</html>
